@@ -1,0 +1,85 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* =================== HEADER=============== */
+header p{
+    color: #274c77;
+    font-weight: 600;
+    margin: 10px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* =================== NEW CONSUMER =============== */
+
+.transaction-details{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e36414;
+    color: white;
+    font-size: 25px;
+    border: 1px solid;
+    font-weight: 600;
+}
+
+.search-detials{
+    background-color: #90be6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+    padding: 5px;
+    padding-right: 100px;
+}
+
+.search-detials label{
+    font-weight: bold;
+    color: black;
+}
+
+.usc-num{
+    font-weight: bold;
+    color: white;
+}
+
+.usc-input{
+    text-align: center;
+}
+
+.fetch-btn{
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.fetch-btn:hover{
+    background-color: #a44a3f;
+    color: white;
+}
+
+
+
+table {
+  margin: 20px auto;         /* Centers the table and adds top margin */
+  border-collapse: collapse; /* Ensures borders collapse properly */
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;    /* Optional: Add border if needed */
+}

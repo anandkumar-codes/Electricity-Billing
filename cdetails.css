@@ -1,0 +1,121 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* =================== HEADER=============== */
+header p{
+    color: #274c77;
+    font-weight: 600;
+    margin: 10px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+/* =================== NEW CONSUMER =============== */
+
+.consumer-details{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff6700;
+    color: white;
+    font-size: 25px;
+    border: 1px solid;
+    font-weight: 600;
+}
+
+.search-detials{
+    background-color: #00cecb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 20px;
+    padding: 5px;
+}
+
+.usc-num{
+    font-weight: bold;
+}
+
+.fetch-btn{
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.usc-input{
+    font-family:Geneva;
+    width: 15%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.details-section{
+    margin-top: 10px;
+    padding-bottom: 20px;
+    background-color: #3c6e71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap: 5px;
+    
+}
+
+
+.details-section input{
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.details-section label{
+    color: white;
+    font-weight: 900;
+}
+
+.update-btn{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(36, 100, 33);
+    color: wheat;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.delete-btn{
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    background-color: rgb(250, 70, 25);
+    color: wheat;
+    border-radius: 10px;
+    border-color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.update-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+.delete-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}

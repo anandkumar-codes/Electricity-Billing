@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consumer Registration</title>
+  <link rel="stylesheet" href="consumer.css">
+</head>
+<body>
+  <header>
+    <p>CENTRAL POWER DISTRIBUTION COMPANY LIMITED</p>
+  </header>
+
+  <div class="new-user">NEW CONSUMER REGISTRATION</div>
+ 
+  <form id="userForm">
+    <div class="usc-no">
+      <div class="con-details">
+        <label for="usc_number">*USC Number</label>
+        <input type="text" name="usc_number" id="usc_number" disabled>
+      </div>
+    </div>
+
+    <div class="label-inputs">
+      <div class="con-details">
+        <label for="consumer_name">Consumer Name</label>
+        <input type="text" name="consumer_name" id="consumer_name" required>
+      </div>
+      <div class="con-details">
+        <label for="consumer_mobile">Consumer Mobile</label>
+        <input type="tel" name="consumer_mobile" id="consumer_mobile" required>
+      </div>
+
+      <div class="con-details">
+        <label for="id_type">ID Type</label>
+        <select id="id_type" name="id_type">
+          <option value="">--Select--</option>
+          <option value="Aadhar">Aadhar</option>
+          <option value="PAN Card">PAN Card</option>
+          <option value="Passport">Passport</option>
+          <option value="Driving License">Driving License</option>
+          <option value="Voter ID">Voter ID</option>
+        </select>
+      </div>
+
+      <div class="con-details">
+        <label for="id_no">ID No</label>
+        <input type="text" name="id_no" id="id_no">
+      </div>
+
+      <div class="con-details">
+        <label for="house_no">House No</label>
+        <input type="text" name="house_no" id="house_no">
+      </div>
+
+      <div class="con-details">
+        <label for="ero">ERO</label>
+        <input type="text" name="ero" id="ero">
+      </div>
+
+      <div class="con-details">
+        <label for="district">District</label>
+        <input type="text" name="district" id="district">
+      </div>
+
+      <div class="con-details">
+        <label for="state">State</label>
+        <input type="text" name="state" id="state">
+      </div>
+
+      <div class="con-details">
+        <label for="pin">PIN</label>
+        <input type="number" name="pin" id="pin">
+      </div>
+
+      <div class="con-details">
+        <label for="date_time">Date & Time</label>
+        <input type="date" name="date_time" id="date_time">
+      </div>
+
+      <div class="con-details">
+        <label for="category">Category</label>
+        <select name="category" id="category">
+          <option value="">--Select--</option>
+          <option value="LT Cat-1(A) Domestic">LT Cat-1(A) Domestic</option>
+          <option value="LT Cat-1(B)i Domestic">LT Cat-1(B)i Domestic</option>
+          <option value="LT Cat-1(A)ii Domestic">LT Cat-1(A)ii Domestic</option>
+          <option value="LT Cat-2(A) Commercial">LT Cat-2(A) Commercial</option>
+          <option value="LT Cat-2(B) Commercial">LT Cat-2(B) Commercial</option>
+        </select>
+      </div>
+
+      <div class="con-details">
+        <label for="contracted_load">Contracted Load</label>
+        <input type="float" step="any" name="contracted_load" id="contracted_load">
+      </div>
+
+      <div class="con-details">
+        <label for="connection_type">Connection Type</label>
+        <select name="connection_type" id="connection_type">
+          <option value="">--Select--</option>
+          <option value="Single(1) Phase">Single(1) Phase</option>
+          <option value="Three(3) Phase">Three(3) Phase</option>
+        </select>
+      </div>
+
+      <div class="con-details meter-no">
+        <label for="meter_no">Meter Number</label>
+        <input type="text" name="meter_no" id="meter_no" disabled>
+      </div>
+
+      <div class="con-details service-no">
+        <label for="service_no">Service Number</label>
+        <input type="text" name="service_no" id="service_no" disabled>
+      </div>
+    </div>
+
+    <button class="button-add" type="submit">Add New Consumer</button>
+  </form> <br>
+  <div class="footer-img1"></div>
+  <div class="footer-img2"></div>
+
+  <script src="consumerscript.js"></script>
+</body>
+</html>

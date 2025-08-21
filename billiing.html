@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Billing</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+<body>
+    <header>
+    <p>CENTRAL POWER DISTRIBUTION COMPANY LIMITED</p>
+    </header>
+
+    <div class="billing-details">CONSUMER BILLING SECTION</div>
+
+    <div class="search-detials">
+        <label class="usc-num">USC Number (or) Service Number</label>
+        <input id="usc_number_input" class="usc-input" type="number" placeholder="Enter Valid Number" />
+        <button class="fetch-btn" onclick="fetchDetails()">Fetch Details</button>
+    </div>
+    <div id="consumer-details-table"></div>
+    <div class="reference hidden">
+        <label for="reference">Reference No</label>
+        <input type="text" name="reference" id="reference" readonly>
+    </div>
+    <div class="bill-details hidden">
+        <div class="year">
+            <label for="year">Year</label>
+            <input type="number" name="year" id="year">
+        </div>
+        <div class="month">
+            <label for="month">Month</label>
+            <select name="month" id="month">
+                <option value="-- Select Month --">-- Select Month --</option>
+                <option value="January">January</option>
+                <option value="February">February</option>
+                <option value="March">March</option>
+                <option value="April">April</option>
+                <option value="May">May</option>
+                <option value="June">June</option>
+                <option value="July">July</option>
+                <option value="August">August</option>
+                <option value="September">September</option>
+                <option value="October">October</option>
+                <option value="November">November</option>
+                <option value="December">December</option>
+            </select>
+            <input type="text" id="total_days" placeholder="Total Days" readonly>
+        </div>
+
+        <div class="units">
+            <label for="units">Units</label>
+            <input type="number" name="units" id="units" placeholder="Please Enter the Units">
+        </div>
+        <div class="charges">
+            <label for="charges">Charges/Unit</label>
+            <input type="number" name="charges" id="charges" readonly>
+        </div>
+        <div class="bill-amount">
+            <label for="billamount">Bill Amount</label>
+            <input type="number" name="billamount" id="billamount" readonly>
+        </div>
+    </div>
+    <div class="btn-container">
+        <button class="btn-generate hidden">Generate Bill</button>
+    </div>
+    
+    <script src="billing.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+
+
+        
+</body>
+</html>

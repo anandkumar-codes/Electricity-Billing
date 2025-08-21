@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Consumer Details</title>
+  <link rel="stylesheet" href="cdetails.css" />
+</head>
+<body>
+  <header>
+    <p>CENTRAL POWER DISTRIBUTION COMPANY LIMITED</p>
+  </header>
+
+  <div class="consumer-details">CONSUMER DETAILS</div>
+
+  <div class="search-detials">
+    <label class="usc-num">USC Number</label>
+    <input id="usc_number_input" class="usc-input" type="text" placeholder="Enter Valid USC Number" />
+    <button class="fetch-btn" onclick="fetchDetails()">Fetch Details</button>
+  </div>
+
+  <div id="result" style="display: none;" >
+    <form id="updateForm" class="details-section">
+      <p><label>Consumer Name: <input id="consumer_name" /></label></p>
+      <p><label>Consumer Mobile: <input id="consumer_mobile" /></label></p>
+      <p><label>ID Type: <select id="id_type" name="id_type">
+          <option value="">--Select--</option>
+          <option value="Aadhar">Aadhar</option>
+          <option value="PAN Card">PAN Card</option>
+          <option value="Passport">Passport</option>
+          <option value="Driving License">Driving License</option>
+          <option value="Voter ID">Voter ID</option>
+        </select></label></p>
+      <p><label>ID No: <input id="id_no" /></label></p>
+      <p><label>House No: <input id="house_no" /></label></p>
+      <p><label>ERO: <input id="ero" /></label></p>
+      <p><label>District: <input id="district" /></label></p>
+      <p><label>State: <input id="state" /></label></p>
+      <p><label>PIN: <input id="pin" type="number" /></label></p>
+      <p><label>Date & Time: <input id="date_time" type="date" /></label></p>
+      <p><label>Category: <select name="category" id="category">
+          <option value="">--Select--</option>
+          <option value="LT Cat-1(A) Domestic">LT Cat-1(A) Domestic</option>
+          <option value="LT Cat-1(B)i Domestic">LT Cat-1(B)i Domestic</option>
+          <option value="LT Cat-1(A)ii Domestic">LT Cat-1(A)ii Domestic</option>
+          <option value="LT Cat-2(A) Commercial">LT Cat-2(A) Commercial</option>
+          <option value="LT Cat-2(B) Commercial">LT Cat-2(B) Commercial</option>
+        </select></label></p>
+      <p><label>Contracted Load: <input id="contracted_load" type="number" step="any"/></label></p>
+      <p><label>Connection Type: <select name="connection_type" id="connection_type">
+          <option value="">--Select--</option>
+          <option value="Single(1) Phase">Single(1) Phase</option>
+          <option value="Three(3) Phase">Three(3) Phase</option>
+        </select></label></p>
+      <p><label>Meter No: <input id="meter_no" /></label></p>
+      <p><label>Service No: <input id="service_no" /></label></p><br>
+      <button class="update-btn" type="submit" onclick="updatedData()">Update</button>
+      <button class="delete-btn" type="button" onclick="deleteConsumer()">Delete</button>
+    </form>
+    
+  </div>
+  
+  <script src="consumerdetails.js"></script>
+
+</body>
+</html>

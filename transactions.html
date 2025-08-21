@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Transactions</title>
+    <link rel="stylesheet" href="transactions.css">
+</head>
+<body>
+    <header>
+    <p>CENTRAL POWER DISTRIBUTION COMPANY LIMITED</p>
+    </header>
+
+    <div class="transaction-details">CONSUMER TRANSACTION DETAILS</div>
+
+    <div class="search-detials">
+        <label class="usc-num">USC Number (or) Service Number</label>
+        <input id="usc_number_input" class="usc-input" type="number" placeholder="Enter Valid Number" />
+        <button class="fetch-btn" onclick="fetchDetails()">Fetch Details</button>
+    </div>
+    <div id="result-container" class="results"></div>
+    <div id="print-button-container" style="text-align: center; margin-top: 20px; display: none;">
+        <button onclick="printTransactionDetails()">🖨️ Print Details</button>
+    </div>
+
+    <script src="transactions.js"></script>
+    
+</body>
+</html>
